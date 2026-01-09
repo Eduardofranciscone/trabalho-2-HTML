@@ -19,7 +19,7 @@ O sistema realiza os seguintes passos:
    - O veículo deve valer **mais de R$ 30.000**
    - A cidade deve ser **Rio de Janeiro**
    - 
-<a href="https://venerable-fairy-f880a9.netlify.app/">Acesse aqui</a>
+<a href="https://venerable-fairy-f880a9.netlify.app/"> Acesse aqui</a>
 
 ---
 
@@ -34,6 +34,21 @@ E
 ➡️ Seguro APROVADO ✅
 Caso contrário:
 ➡️ Seguro RECUSADO ❌
+```
+🛠️ Tecnologias Utilizadas
 
+🌐 HTML5 — Estrutura da aplicação
+
+🎨 Bootstrap 5 — Estilização e alerts (em evolução)
+
+⚡ JavaScript (ES6) — Lógica da aplicação
+
+🔄 jQuery — Manipulação do DOM e requisições AJAX
+
+🌍 BrasilAPI — Consumo de dados reais:
+
+API de CEP
+
+API da Tabela FIPE
 
 
