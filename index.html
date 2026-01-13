@@ -11,6 +11,50 @@
 </head>
 
 <body>
+    <div class="modal fade bg-white" id="meuModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Bem-vindo à simulação de seguro de veículos.
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+                        <path d="M7 6a1 1 0 0 1 2 0v1H7z"/>
+                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0"/>
+                        </svg>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                   <h6>
+                    Este sistema tem como objetivo demonstrar, de forma simples, como funciona o processo básico de análise para aprovação de um seguro.
+                   </h6>
+                   <p>
+                    O funcionamento ocorre da seguinte maneira:
+                    <ul>
+                        <li>Primeiro, o sistema consulta o CEP informado para identificar a cidade do proprietário do veículo</li>
+                        <li>Em seguida, é realizada uma consulta à Tabela FIPE para obter o valor e as informações do veículo.</li>
+                        <li>
+                            Após essas consultas, o sistema aplica regras de análise para decidir se o seguro será aprovado ou não.
+                        </li>
+                    </ul>
+                   </p>
+                   <h6>O seguro será aprovado quando:</h6>
+                   <ul>
+                    <li>A cidade identificada for Rio de Janeiro</li>
+                    <li>O valor do veículo, de acordo com a Tabela FIPE, for superior a R$ 30.000,00</li>
+                   </ul>
+                   <p>Caso qualquer um desses critérios não seja atendido, o seguro será reprovado.Esta simulação tem caráter demonstrativo e não representa uma análise real de seguradoras.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-5">
         <div class="alert alert-info" role="alert">
             <h4 class="alert-heading text-center">Instruções:</h4>
@@ -19,11 +63,12 @@
             <hr>
             <p class="mb-0">Clique nos botões "Buscar cep" e "Buscar Fipe" para obter as informações necessárias.</p>
         </div>
-        <div class="container d-flex flex-column align-items-center justify-content-center gap-3 p-4 border rounded shadow ">
+        <div
+            class="container p-4 border rounded shadow d-flex flex-column align-items-center justify-content-center">
             <h1>Simulação de Seguro</h1>
-            <form id="formSeguro">
+            <form id="formSeguro" class=" d-flex flex-column align-items-center justify-content-center ">
                 <label for="cep">Digite o CEP:</label>
-                <input type="text" id="cep" required> 
+                <input type="text" id="cep" required>
                 <input type="button" name="btn" id="btn-cep" value="Buscar cep"> <br><br>
 
                 <label for="fipe">Digite o Código FIPE:</label>

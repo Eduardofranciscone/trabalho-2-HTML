@@ -1,4 +1,6 @@
 $(document).ready(function() {
+     $("#meuModal").modal("show");
+
     let cidade;
     let valorFipe;
 
@@ -35,12 +37,10 @@ $(document).ready(function() {
                 
                 // Verifica se a cidade é "Rio de Janeiro" e o valor do carro é maior que 30.000
                 if (cidade && cidade.toLowerCase() === "rio de janeiro" && valorFipe > 30000) {
-                    // $("#resultado").append("<br>Seu seguro foi liberado").css("color", "green");
                     $("#resultado").append("<div class='alert alert-success alert-dismissible' id='show'>");
                     $("#show").append("<strong>Sucesso !</strong> Seu seguro foi aprovado!!!.")
                     $("#show").append("</div>")                  
                 }else {
-                    // $("#resultado").append("<br>Infelizmente o seguro não foi aceito").css("color", "red");
                     $("#resultado").append("<div class='alert alert-danger' id='show'>");
                     $("#show").append("<strong>Infelizmente o seguro não foi aceito</strong>")
                     $("#show").append("</div>") 
@@ -51,7 +51,6 @@ $(document).ready(function() {
         })
     });
 });
-
 
 
 
